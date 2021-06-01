@@ -1,0 +1,6 @@
+<mapper namespase="org.example.dao.UserDao">
+    <!--sql 标示的唯一性 namespace.id来组成，statementId-->
+    <select id="selectAll" parameterType="org.example.pojo.User" resultType="org.example.pojo.User">
+        select * from user where id=#{id} and name=#{name}
+    </select>
+</mapper>
